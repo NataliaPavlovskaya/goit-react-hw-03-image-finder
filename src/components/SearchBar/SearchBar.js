@@ -1,8 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types';
-import SearchFrom from 'components/SearchForm/SearchForm';
+import SearchFrom from 'components/SearchForm';
 
-import styles from '../SearchBar/Searchbar.module.css'
+import styles from '../Searchbar/Searchbar.module.css'
 
 const Searchbar = ({ onSearch }) => (
     <header className={styles.Searchbar}>
