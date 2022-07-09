@@ -9,7 +9,7 @@ const SearchFrom = () => {
 return (
     <form 
     className={styles.SearchFrom}
-    autoСomplete="off"
+    autocomplete = "off"
     autoFocus
     >
         <button type="submit" className={styles['SearchForm-button']}>

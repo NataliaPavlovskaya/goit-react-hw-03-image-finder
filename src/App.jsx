@@ -6,6 +6,8 @@ import Button from 'components/Button';
 import Modal from './components/Modal/Modal';
 import Loader from 'components/Loader';
 import Message from 'components/Message';
+import IconButton from 'components/IconButton';
+import { ReactComponent as CloseIcon } from './Icons/close.svg';
 
 import fetchImages from './API/Api.js'
 
@@ -111,8 +113,13 @@ class App extends Component {
   
           {showModal && (
             <Modal onClose={this.toggleModal}>
-              <img src={largeImage} alt="" className="Modal-image" />
-            </Modal>
+             <div className="Close-box">
+              <IconButton onClick={this.toggleModal} aria-label="Close modal">
+              <CloseIcon width="20px" height="20px" fill="#7e7b7b" />
+              </IconButton>
+            </div>
+
+            <img src={largeImage} alt="" className="Modal-image" />          </Modal>
           )}
   
           {isLoading && <Loader />}
