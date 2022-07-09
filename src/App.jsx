@@ -115,7 +115,7 @@ class App extends Component {
             </Modal>
           )}
   
-          {isLoading && <Loader />}
+          {/* {isLoading && <Loader />} */}
   
           {error && (
             <Message>
