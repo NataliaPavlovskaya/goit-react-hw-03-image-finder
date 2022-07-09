@@ -119,7 +119,7 @@ class App extends Component {
               </IconButton>
             </div>
 
-            <img src={largeImage} alt="" className="Modal-image" />          </Modal>
+            <img src={largeImage} alt="img" className="Modal-image" />          </Modal>
           )}
   
           {isLoading && <Loader />}
