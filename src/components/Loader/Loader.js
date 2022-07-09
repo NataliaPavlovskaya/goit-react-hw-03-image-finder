@@ -5,7 +5,7 @@ import styles from './Loader.module.css';
 
 const Loader = () => (
     <div className={styles.Loader}>
-      <img type="TailSpin" alt = "img" color="#02be6e" height={100} width={100} />
+      {/* <img type="TailSpin" alt = "img" color="#02be6e" height={100} width={100} /> */}
     </div>
   );
 export default Loader;
