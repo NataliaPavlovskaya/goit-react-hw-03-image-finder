@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import Searchbar from 'components/Searchbar';
+import SearchBar from 'components/SearchBar';
 import ImageGallery from 'components/ImageGallery';
 import Button from 'components/Button';
 import Modal from './components/Modal/Modal';
@@ -96,7 +96,7 @@ class App extends Component {
   
       return (
         <>
-          <Searchbar onSearch={this.onChangeQuery} />
+          <SearchBar onSearch={this.onChangeQuery} />
   
           {images.length < 1 && (
             <Message>

@@ -3,20 +3,20 @@ import PropTypes from 'prop-types';
 import SearchFrom from 'components/SearchForm';
 
 
-import styles from './Searchbar.module.css';
+import styles from './SearchBar.module.css';
 
 
-const Searchbar = ({ onSearch }) => (
+const SearchBar = ({ onSearch }) => (
     <header className={styles.Searchbar}>
       <SearchFrom onSearch={onSearch} />
     </header>
   );
   
-  Searchbar.propTypes = {
+  SearchBar.propTypes = {
     onSearch: PropTypes.func.isRequired,
   };
   
-  export default Searchbar;
+  export default SearchBar;
 
 
 
