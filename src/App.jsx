@@ -59,9 +59,10 @@ class App extends Component {
           this.scrollOnLoadButton();
         }
       } catch (error) {
-        console.log('Smth wrong with App fetch', error);
+        // ошибка 
         this.setState({ error });
       } finally {
+        // загрузка
         this.setState({
           isLoading: false,
         });

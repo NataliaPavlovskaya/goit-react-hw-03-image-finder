@@ -29,11 +29,11 @@ handleBackdropClick = e => {
     }
 }
 
-render(){
+render() {
     return createPortal (
         <div className={styles.Overlay} onClick={this.handleBackdropClick}>
             <div className={styles.Modal}>
-                <img src="" alt="" />
+                {this.props.children}
             </div>
         </div>,
         modalRoot ,
